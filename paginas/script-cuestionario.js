@@ -42,7 +42,7 @@ class Quiz {
   const questionText = document.getElementById("question");
   const choice = document.getElementById("choices");
   let text = document.createElement("h2");
-  let indexPregunta = 4;
+  let indexPregunta = 0;
   text.innerHTML = containerQuiz[indexPregunta].question;
   questionText.appendChild(text);
 for(i=0;i < 4; i++){
