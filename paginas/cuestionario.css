@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -5,15 +6,16 @@
 }
 body{
     background-color: #272343;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+}
+h1{
+    font-family: 'Lobster', cursive;
+    letter-spacing: 1.5px;
+}
+.logo{
+    color: #FFF;
 }
 #quiz{
     background-color: #e3f6f6;
-    width: 30rem;
-    padding: 4rem;
     text-align: center;
 }
 #question{
@@ -35,4 +37,115 @@ body{
 }
 #progress{
     font-size: 20px;
+}
+.header{
+    height: 60px;
+}
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+.logo .icon-menu{
+    margin: 5px;
+}
+.icon-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #FBA919;
+    color: #FFF;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    margin-left: auto;
+}
+.nav{
+    position: absolute;
+    left: -100%;
+    top: 60px;
+    width: 100%;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu--link{
+    display: block;
+    padding: 20px;
+    background-color: #FBA919;
+    text-decoration: none;
+    color: #FFF;
+}
+.menu--link:hover{
+    background: white;
+    color: #FBA919;
+}
+.mostrar{
+    left: 0;
+}
+@media(min-width:480px){
+    .logo{
+        font-size: 40px;
+    }
+    .nav{
+        left: 0;
+    }
+    .icon-menu{
+        display: none;
+    }
+    .menu--link{
+        font-size: 3rem;
+    }
+    .header .contenedor{
+        justify-content: center;
+    }
+    #quiz{
+        padding-top: 6rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+        height: 100%;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    h2{
+        padding: 5rem 0;
+        font-size: 4rem;
+    }
+    #choices{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    #progress{
+        font-size: 3rem;
+    }
+    .btn{
+        width: 90%;
+        padding: 30px 0;
+        font-size: 3rem;
+    }
+}
+@media(min-width:1024px){
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        padding: 2rem 0;
+        font-size: 3rem;
+    }
+    #quiz{
+        margin-left: 30rem;
+        margin-right: 30rem;
+    }
+    #progress{
+        font-size: 2rem;
+    }
+    .btn{
+        padding: 10px 0;
+        font-size: 2rem;
+    }
 }
