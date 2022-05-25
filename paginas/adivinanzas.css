@@ -3,6 +3,16 @@
    border: 1px solid #393939;
    border-radius: 5px 5px 5px 5px;
    color: #393939;
-   font-size: 20px;
+   font-size: 1.5rem;
    padding: 5px;
+}
+@media(min-width:480px){
+    .text{
+        font-size: 3rem;
+    }
+}
+@media(min-width:1024px){
+    .text{
+        margin: 3rem 0;
+    }
 }
