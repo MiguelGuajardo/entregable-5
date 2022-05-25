@@ -1,5 +1,5 @@
 //Section 1
-let quizz = ["Q","U","I","Z","Z"];
+let quizz = ["B","R","A","I","N","Z","Z"];
 const UL = document.createElement("ul");
 UL.setAttribute("class", "ul");
 const sectionOne = document.getElementById("section-1");
