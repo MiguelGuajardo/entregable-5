@@ -210,3 +210,8 @@ section{
       font-size: 8vh;
     }
   }
+  @media(min-width:1024px){
+    #section-3{
+      flex-direction: row;
+    }
+  }
