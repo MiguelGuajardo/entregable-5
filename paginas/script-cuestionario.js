@@ -1,3 +1,11 @@
+  let btnMenu = document.getElementById("btn-hamburger");
+  let nav = document.getElementById("nav");
+  btnMenu.addEventListener("click", ()=>{
+    nav.classList.toggle("mostrar");
+  })
+
+
+
 class Quiz {
     constructor(question, choices, answer) {
       this.question = question;

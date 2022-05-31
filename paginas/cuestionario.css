@@ -85,35 +85,6 @@ h1{
 .mostrar{
     left: 0;
 }
-#correcto{
-    background-color: #06d6a0;
-    color: #FFF;
-    width: 250px;
-    font-size: 20px;
-    border-radius: .3rem;
-    padding: 10px 20px;
-    margin: 10px 40px 10px;
-}
-#incorrecto{
-    background-color: #ef476f;
-    color: #FFF;
-    width: 250px;
-    font-size: 20px;
-    border-radius: .3rem;
-    padding: 10px 20px;
-    margin: 10px 40px 10px;
-}
-#disable{
-    background-color: gray;
-    color: #FFF;
-    width: 250px;
-    font-size: 20px;
-    border-radius: .3rem;
-    padding: 10px 20px;
-    margin: 10px 40px 10px;
-    pointer-events: none;
-    
-}
 @media(min-width:480px){
     .logo{
         font-size: 40px;
@@ -177,21 +148,6 @@ h1{
         cursor: pointer;
         background-color: #073b4c;
     }
-    #disable{
-        padding: 15px 50px;
-    margin: 10px 40px 10px;
-        font-size: 2.5rem;
-    }
-    #incorrecto{
-        padding: 15px 50px;
-    margin: 10px 40px 10px;
-        font-size: 2.5rem;
-    }
-    #correcto{
-        padding: 15px 50px;
-    margin: 10px 40px 10px;
-        font-size: 2.5rem;
-    }
     .h2{
         font-size: 2.5rem;
     }
@@ -229,21 +185,6 @@ h1{
     #btn-next:hover{
         cursor: pointer;
         background-color: #073b4c;
-    }
-    #disable{
-        padding: 15px 30px;
-    margin: 10px 40px 10px;
-    font-size: 1.5rem;
-    }
-    #incorrecto{
-        padding: 15px 30px;
-    margin: 10px 40px 10px;
-    font-size: 1.5rem;
-    }
-    #correcto{
-        padding: 15px 30px;
-    margin: 10px 40px 10px;
-    font-size: 1.5rem;
     }
     .h2{
         font-size: 1.5rem;
