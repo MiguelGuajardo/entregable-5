@@ -3,7 +3,9 @@ class Adivinazas {
         this.question = question;
         this.answer = answer;
     }
-    
+    correctAnswer(answer){
+      return answer ===this.answer;
+    }
 }
 const containerAdivinados = [
     {
@@ -50,12 +52,23 @@ const containerAdivinados = [
     mostrarInput(answer){
       const inputContainer = document.getElementById("input");
       const input = document.createElement("input");
-      input.setAttribute("id","text")
+      input.setAttribute("id","text");
+      const valor = document.getElementById("text");
       inputContainer.appendChild(input);
-      input.addEventListener("input", compararRespuesta);
+      
+      input.addEventListener("keypress", function(compararRespuesta){
+        if (compararRespuesta.key === "Enter"){
+          console.log(input.value.toUpperCase());
+   /* if(input.value.toUpperCase() === this.getQuestionIndex().answer ){
+      console.log("CORRECTO");
+    }else{
+      console.log("INCORRECTO");
+
+    }*/
+  }});
     }
   }
-  const newQuestions = containerAdivinados.map(question => new Adivinazas(question.question,question.answer));
+  const newQuestions = containerAdivinados.map(adivinanza => new Adivinazas(adivinanza.question,adivinanza.answer));
 
   function siguientePregunta(pregunta,mostrar1){
     if(pregunta.finalizarPregunta()){
@@ -66,18 +79,9 @@ const containerAdivinados = [
       mostrar1.mostrarInput();
     }
   }
-  function compararRespuesta(valor){
-    if(valor !== containerAdivinados.answer){
-      console.log("Incorrecto");
-    }else{
-      console.log("correcto");
-      
-    }
-  }
   function iniciar(){
     const pregunta = new Question(newQuestions);
     const mostrar1 = new NodoMostrar();
-    
     siguientePregunta(pregunta,mostrar1);
    }
    iniciar(); 
